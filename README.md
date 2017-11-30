@@ -1,2 +1,2 @@
 # School
-School related
+Learning Material
