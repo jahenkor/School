@@ -1,0 +1,29 @@
+Chapter 1: Basic Concepts
+   *MMIX is a 100% natural computer
+   *Machine language
+   -Bits and Bytes
+	*# represents hex in this book
+	*ASCII is a 7-bit code with control characters #00-#1f, printing charactters #20-#7E, and a delete character #7f
+	*Unicode is a 16-bit code that supports nearly every modern langauge, came about during the 1990s. (Also called ISO/IEC 10646 UCS-2) Includes Hebrew, Indian, chinese characters,etc.
+	*wyde refers to a 16-bit quantity 
+		- 2 bytes = 1 wyde
+		- 2 wydes = 1 tetra
+		- 2 tetras = 1 octa
+   
+   Memory and Registers
+   ====================
+
+   * MMIX has 2^64 cells of memory and 2^8 general-purpose registers, together with 2^5 special registers.
+   * Data is transffered from memory to registers, transformed in registers, and transferred from registers to memory.
+   * These cells of memory are called M[0],....,M[2^(64)-1], while general purpose registers are called $0,$1,....$255
+   * M1[x] = M[x] = M[x mod 2^64] when x < 0 or x >= 2^64
+   *The special registers of MMIX are called rA, rB,....,rZ, rBB, rTT, rWW, rXX, rYY, and rZZ.
+   *MMIX figure on pg 10
+   *An instruction or "command" is a tetrabyte(32 bit) whose four bytes are conventionally called OP, X, Y, and Z. OP is the operation code (or "opcode" for short); X, Y, and Z specify the operands.
+   *Operand bytes always unsigned ints.
+   * The instruction #20010203 is conventionally written 'ADD $X, $Y, $Z'(Sets the value at $X, to the sum of $Y and $Z.)
+	-#20 = ADD, X = #01, Y = #02, Z = #03,  
+	- Most instructions have 3 operands, some 2, very few have 1
+	- With Two operands, 'INCL $X, $YZ' is typical notation (Increases register $X by the amount YZ.)
+	- One operand, 'JMP $XYZ'
+	
