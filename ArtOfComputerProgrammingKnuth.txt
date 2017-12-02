@@ -26,4 +26,15 @@ Chapter 1: Basic Concepts
 	- Most instructions have 3 operands, some 2, very few have 1
 	- With Two operands, 'INCL $X, $YZ' is typical notation (Increases register $X by the amount YZ.)
 	- One operand, 'JMP $XYZ'
-	
+	- s($X) denotes a signed integer corresponding to bit pattern x.
+
+Loading and Unloading
+====================
+
+   *LDBU (Load Byte Unsigned) $X, $Y, $Z: U($X) <- u(M_1[A])
+   *LDWU (Load Wyde Unsigned)
+   *LDTU (Load Tetra Unsigned)
+   *LDOU (Load Octa Unsigned)
+   *LDHT (Load High Tetra) $X,$Y,$Z: u($X) <- u(M_4[A]) x 2^32
+	- Tetrabyte M_4[a] is loaded into the left half of $X, and the right half is set to zero.
+   *LDA $X,$Y,$Z (Load Address): u($X) <- A	

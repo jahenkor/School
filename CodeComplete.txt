@@ -1,3 +1,30 @@
-Chapter 3:
-	-Upstream activities are essential
+Chapter 3: Measure Twice, Cut Once: Upstream Prerequisites
+=========================================================
+   *Upstream activities are essential
+	-"downstream" developers build applications and tools based on a finished product while "upstream" developers work on the products to be released.
+	-Think of it as a river
+   *Mission Critcal Systems is a system that is essential to the survival of a business or organization.
+   *Systems whose failure or malfunction may result in: Death or serious injury to people, Loss or severe damage to expensive equipment/environmental harm.
+   *Iterative projects vs. Sequential Projects
+	-Iterative projects tend to see lower cost of rework during project development than sequential projects, but if prerequisites are followed, sequential projects can lead to significantly lower costs than their iterative counterpart.   *Choosing between sequential and iterative approaches
+	-Sequential (up-front):
+		> The requirements are fairly stable
+		> Design is straightfoward/ well understood
+		> Development team is familiar with applications area
+		> The project contains little risk
+		> Long-term predictability is important
+	-Iterative (as-you-go) :
+		> The requirements are not well understood or you expect them to be unstable for other reasons
+		> Design is complex, challenging, or both
+		> Development team is unfamiliar with the applications area
+		> Project contains a lot of risk
+		> Long-term predictability is not important
+		> Cost of changing requirements, design, and code downstream is likely to be low.
+   * Problem Definition Prerequisites
+	- Make sure the problem definition is without any reference to a possible solution, it should solely state the problem.
+	- Definition should be in user langauge, not technical jargon unless compile times are too slow or programming tools are buggy.
+	- Explicit requirements help ensure the user rather than programmer drives system functionality.
+	-Checklist on pg 53 (pp. 21)
+
+
 	
